@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BottomSheet</string>
+    <string name="show_bottom">Show Bottom Sheet</string>
+    <string name="course_name">DSA Self Paced Course</string>
+    <string name="course_track">Course Tracks : 30</string>
+    <string name="course_duration">Course Duration : 4 Months</string>
+    <string name="dismiss">Dismiss dialog</string>
 </resources>

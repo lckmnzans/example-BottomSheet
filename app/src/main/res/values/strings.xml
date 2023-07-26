@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">BottomSheet</string>
-    <string name="show_bottom">Show Bottom Sheet</string>
-    <string name="course_name">DSA Self Paced Course</string>
-    <string name="course_track">Course Tracks : 30</string>
-    <string name="course_duration">Course Duration : 4 Months</string>
-    <string name="dismiss">Dismiss dialog</string>
+    <string name="show_bottom_modal">Show Bottom Sheet Modal</string>
+    <string name="show_bottom_persist">Show Bottom Sheet Persist</string>
+    <string name="title">Congratulations!</string>
+    <string name="message1">You just opened BottomSheet modal</string>
+    <string name="message2">You just opened BottomSheet persist</string>
+    <string name="desc1">You can close this BottomSheet by click the dismiss button</string>
+    <string name="desc2">You can close this BottomSheet by slide it down</string>
+    <string name="dismiss">Dismiss BottomSheet</string>
 </resources>

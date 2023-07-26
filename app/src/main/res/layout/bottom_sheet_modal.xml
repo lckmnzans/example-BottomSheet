@@ -8,43 +8,45 @@
         android:layout_margin="2dp">
 
         <ImageView
-            android:id="@+id/iv_course"
+            android:id="@+id/iv_bottom_sheet_modal"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:src="@drawable/ic_launcher_background"
-            android:contentDescription="@string/course_name" />
+            android:src="@drawable/ic_launcher_background" />
 
         <TextView
-            android:id="@+id/tv_course_name"
+            android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/iv_course"
-            android:text="@string/course_name"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/iv_bottom_sheet_modal"
+            android:text="@string/title"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
-        
+
         <TextView
-            android:id="@+id/tv_course_track"
+            android:id="@+id/tv_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_course_name"
+            android:layout_below="@id/tv_title"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/iv_course"
-            android:text="@string/course_track"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/iv_bottom_sheet_modal"
+            android:text="@string/message1"
             android:textColor="@color/black"
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/tv_course_duration"
+            android:id="@+id/tv_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_course_track"
+            android:layout_below="@id/tv_message"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/iv_course"
-            android:text="@string/course_duration"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/iv_bottom_sheet_modal"
+            android:text="@string/desc1"
             android:textColor="@color/black"
             android:textSize="15sp" />
 
@@ -52,8 +54,11 @@
             android:id="@+id/btn_dismiss"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_course"
-            android:layout_margin="10dp"
+            android:layout_below="@id/iv_bottom_sheet_modal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/dismiss"
             android:textAllCaps="false" />
 

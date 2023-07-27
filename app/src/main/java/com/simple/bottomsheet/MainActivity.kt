@@ -35,5 +35,32 @@ class MainActivity : AppCompatActivity() {
 
         val bottomSheet: View = findViewById(R.id.bottom_sheet)
         val bottomSheetBehavior: BottomSheetBehavior<*> = BottomSheetBehavior.from(bottomSheet)
+        /*
+        * state in BottomSheetPersist
+        * - if BottomSheet state is hidden, it can only be expanded programmatically not by using slide up gesture
+        * - the BottomSheet hidden state can only be set by setting behavior_hideable to true
+        * */
+        bottomSheetBehavior.addBottomSheetCallback(object: BottomSheetBehavior.BottomSheetCallback() {
+            override fun onStateChanged(bottomSheet: View, newState: Int) {
+                when (newState) {
+                    BottomSheetBehavior.STATE_EXPANDED -> {
+                        btnShowBottomSheetPersist.setOnClickListener {
+                            bottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
+                        }
+                    }
+                    else -> {
+                        btnShowBottomSheetPersist.setOnClickListener {
+                            bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                        }
+                    }
+                }
+            }
+
+            override fun onSlide(bottomSheet: View, slideOffset: Float) {
+                //
+            }
+        })
+
+
     }
 }
